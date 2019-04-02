@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="CSS/page1 style.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+<script>
+	var check=1;
+	$(document).ready(function(){
+		setInterval(function(){
+			if(check==1)
+				{$("#pic1").attr("src","images/1.jpg");check=2;}
+			else if(check==2)
+				{$("#pic1").attr("src","images/2.jpg");check=3;}
+			else if(check==3)
+				{$("#pic1").attr("src","images/3.jpg");check=4;}
+			else if(check==4)
+				{$("#pic1").attr("src","images/4.jpg");check=5;}
+			else if(check==5)
+				{$("#pic1").attr("src","images/4.jpg");check=1;}
+		},3000);
+	});
+	</script>
+</head>
+
+<body>
+<div class="mainpage">
+<div class="title">
+	<div class="logo">
+	<img src="images/logo.png" width="100px" height="100px">
+	<span>四川大学锦城学院<br>计算机与软件学院</span>
+	</div>
+	<div class="search">
+		<span>四川大学锦城学院官网 | <a href="login1.html">登陆</a></span><br>
+		<input type="text">
+	</div>
+</div>
+	<div class="banner">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="index.html">学院概况</a></li>
+			<li><a href="#">师资队伍</a></li>
+			<li><a href="#">人才培育</a></li>
+			<li><a href="#">教学科研</a></li>
+			<li><a href="#">学生工作</a></li>
+			<li><a href="#">学生活动</a></li>
+			<li><a href="#">招生就业</a></li>
+			<li><a href="#">专题专项</a></li>	
+		</ul>
+	</div>
+	<div style="margin:10px 0 30px;">
+		<img src="images/5.jpg" width="100%" height="300px;" id="pic1">
+	</div>
+	<div class="construction">
+		<div class="consbanner"><a href="#">学院简介</a> | <a href="#">学院荣誉</a> | <a href="#">专业介绍</a> | <a href="#">团总支架构</a>
+		<div style="float:right;">您现在的位置是:首页>学院概况>团总支架构</div>
+		</div>
+	</div>
+	<div>
+		<img src="images/团总支.png" width="100%">
+	</div>
+<div class="bottom">
+<div class="logo2">
+<img src="images/logo.png" width="100px;"><br>
+<span>四川大学锦城学院计算机软件学院</span>
+</div>
+<div class="left">
+<ul>
+<li><a href="#">招生信息</a> <a href="#">人事招聘</a></li>
+<li><a href="#">服务指南</a> <a href="#">校友会</a></li>
+<li><a href="#">学院简报</a> <a href="#">就业信息</a></li>
+</ul>
+</div>
+<div class="picture">
+<img src="images/en.PNG">
+<img src="images/二维码.PNG">
+</div>
+</div>
+<div class="foot">
+	友情链接
+	<a href="#">中国计算机学会</a>
+	<a href="#">四川省教育厅</a>
+	<a href="#">四川大学</a>
+	<a href="#">四川大学锦城教务网</a>
+	<a href="#">四川大学锦城在线</a>
+</div>
+</div>
+<div style="width:100%;text-align:center;margin:15px 0px;">CopyRight©四川大学锦城学院计算机与软件工程学院</div>
+</body>
+</html>
